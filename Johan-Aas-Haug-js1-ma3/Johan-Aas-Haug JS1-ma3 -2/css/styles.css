@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: beige;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    margin: 10px;
+    padding: 10px;
+    max-width: 150px;
+    background: rgb(36, 36, 36);
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.loading {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgba(1, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top-color: rgb(245, 204, 0);
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
